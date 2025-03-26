@@ -2,6 +2,7 @@ import pandas as pd
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from datetime import datetime, timedelta
+import asyncio
 
 # توکن ربات
 TOKEN = '7600866536:AAErQiOFJJYDNE5_ZUaynC7hZl7a4h0UdnM'
@@ -98,4 +99,4 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())
